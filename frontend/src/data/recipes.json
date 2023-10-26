@@ -1,0 +1,47 @@
+[
+    {
+      "title": "Spaghetti Carbonara",
+      "ingredients": [
+        "spaghetti",
+        "eggs",
+        "pecorino cheese",
+        "guanciale"
+      ],
+      "instructions": [
+        "Cook spaghetti according to package instructions.",
+        "In a bowl, whisk eggs and grated pecorino cheese.",
+        "In a pan, fry guanciale until crispy.",
+        "Combine cooked spaghetti with the egg and cheese mixture.",
+        "Add crispy guanciale and season with black pepper."
+      ],
+      "imageUrl": "spaghetti-carbonara.jpg",
+      "cuisine": "Italian",
+      "difficulty": "Intermediate",
+      "servings": 2,
+      "description": "Spaghetti alla carbonara is an Italian pasta dish from Rome made with egg, hard cheese, guanciale, and pepper.",
+      "duration": 15
+    },
+    {
+      "title": "Chicken Alfredo",
+      "ingredients": [
+        "fettuccine",
+        "chicken breast",
+        "heavy cream",
+        "parmesan cheese"
+      ],
+      "instructions": [
+        "Cook fettuccine until al dente.",
+        "Season and grill chicken breast.",
+        "In a pan, heat heavy cream and grated parmesan cheese.",
+        "Slice the cooked chicken and add it to the sauce.",
+        "Toss the cooked fettuccine in the sauce and serve."
+      ],
+      "imageUrl": "chicken-alfredo.jpg",
+      "cuisine": "Italian",
+      "difficulty": "Intermediate",
+      "servings": 4,
+      "description": "Fettuccine alfredo or fettuccine al burro is a pasta dish made from fettuccine tossed with Parmesan cheese and butter.",
+      "duration": 20
+    }
+  ]
+  

@@ -1,0 +1,34 @@
+.banner-box {
+    background-image: linear-gradient(to bottom, var(--primary-color), #fff);
+    border-radius: 15px;
+    width: 80%;
+    height: 240px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.banner-title {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1rem;
+    text-align: center;
+
+}
+
+.banner-button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #2D9E8B;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    border-style: none;
+    margin: auto;
+  }

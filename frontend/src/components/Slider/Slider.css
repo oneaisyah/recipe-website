@@ -1,0 +1,14 @@
+.slider {
+    padding: 20px 10%;
+}
+
+.slider-container {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.recipe-list {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.3s;
+}
