@@ -35,7 +35,7 @@
     gap: 5px;
     padding: 10px 15px;
     border-radius: 5px;
-    background-color: #2D9E8B;
+    background-color: var(--primary-color);
     color: #fff;
     font-weight: 600;
     cursor: pointer;
@@ -52,5 +52,5 @@
   
   .nav-link:hover, .nav-links a.active {
     padding-bottom: 3px;
-    border-bottom: 3px solid #2D9E8B;
+    border-bottom: 3px solid var(--primary-color);
   }

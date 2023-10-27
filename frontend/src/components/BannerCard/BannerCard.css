@@ -25,7 +25,7 @@
     gap: 5px;
     padding: 10px 15px;
     border-radius: 5px;
-    background-color: #2D9E8B;
+    background-color: var(--primary-color);
     color: #fff;
     font-weight: 600;
     cursor: pointer;
