@@ -44,6 +44,195 @@
       "servings": 4,
       "description": "Fettuccine alfredo or fettuccine al burro is a pasta dish made from fettuccine tossed with Parmesan cheese and butter.",
       "duration": 20
-    }
+    },
+    {
+      "id": 3,
+      "title": "Beef Stroganoff",
+      "ingredients": [
+          "beef sirloin",
+          "onion",
+          "mushrooms",
+          "sour cream"
+      ],
+      "instructions": [
+          "Slice beef into thin strips.",
+          "In a pan, sauté beef and onion until browned.",
+          "Add sliced mushrooms and cook until tender.",
+          "Stir in sour cream and simmer for a few minutes.",
+          "Serve over cooked egg noodles."
+      ],
+      "imageUrl": "beef-stroganoff.jpg",
+      "cuisine": "Russian",
+      "difficulty": "Intermediate",
+      "servings": 4,
+      "description": "Beef stroganoff is a Russian dish of sautéed pieces of beef in a sour cream sauce.",
+      "duration": 30
+  },
+  {
+      "id": 4,
+      "title": "Shrimp Scampi",
+      "ingredients": [
+          "shrimp",
+          "butter",
+          "garlic",
+          "white wine"
+      ],
+      "instructions": [
+          "Sauté minced garlic in butter until fragrant.",
+          "Add shrimp and cook until pink.",
+          "Pour in white wine and cook until reduced.",
+          "Serve over cooked linguine."
+      ],
+      "imageUrl": "shrimp-scampi.jpg",
+      "cuisine": "Italian",
+      "difficulty": "Easy",
+      "servings": 2,
+      "description": "Shrimp scampi is a popular Italian-American dish made with shrimp, garlic, butter, and white wine.",
+      "duration": 25
+  },
+  {
+    "id": 5,
+    "title": "Beef Tacos",
+    "ingredients": [
+        "ground beef",
+        "tortillas",
+        "lettuce",
+        "tomato",
+        "cheddar cheese",
+        "sour cream"
+    ],
+    "instructions": [
+        "Brown ground beef in a pan.",
+        "Warm tortillas in a skillet or oven.",
+        "Assemble tacos with beef, lettuce, tomato, cheese, and sour cream.",
+        "Serve and enjoy."
+    ],
+    "imageUrl": "beef-tacos.jpg",
+    "cuisine": "Mexican",
+    "difficulty": "Easy",
+    "servings": 4,
+    "description": "Beef tacos are a Mexican dish consisting of seasoned beef and various toppings folded inside a tortilla.",
+    "duration": 25
+},
+{
+    "id": 6,
+    "title": "Vegetable Stir-Fry",
+    "ingredients": [
+        "mixed vegetables",
+        "tofu",
+        "soy sauce",
+        "garlic",
+        "sesame oil"
+    ],
+    "instructions": [
+        "Sauté garlic in sesame oil.",
+        "Add tofu and stir-fry until golden.",
+        "Add mixed vegetables and cook until tender.",
+        "Season with soy sauce and serve."
+    ],
+    "imageUrl": "vegetable-stir-fry.jpg",
+    "cuisine": "Asian",
+    "difficulty": "Easy",
+    "servings": 3,
+    "description": "Vegetable stir-fry is a quick and healthy Asian dish made by frying mixed vegetables and tofu in a seasoned sauce.",
+    "duration": 20
+},
+{
+    "id": 7,
+    "title": "Chicken Parmesan",
+    "ingredients": [
+        "chicken breast",
+        "egg",
+        "breadcrumbs",
+        "tomato sauce",
+        "mozzarella cheese",
+        "parmesan cheese"
+    ],
+    "instructions": [
+        "Slice chicken breast in half lengthwise.",
+        "Dip chicken in egg and coat with breadcrumbs.",
+        "Fry chicken in oil until golden brown.",
+        "Top with tomato sauce and cheeses.",
+        "Bake until cheese is melted and bubbly."
+    ],
+    "imageUrl": "chicken-parmesan.jpg",
+    "cuisine": "Italian",
+    "difficulty": "Intermediate",
+    "servings": 2,
+    "description": "Chicken parmigiana, or chicken parmesan, is a popular Italian-American dish made by coating chicken breast in breadcrumbs and topping it with tomato sauce and cheese.",
+    "duration": 40
+},
+{
+    "id": 8,
+    "title": "Hamburger",
+    "ingredients": [
+        "ground beef",
+        "hamburger buns",
+        "lettuce",
+        "tomato",
+        "onion",
+        "cheddar cheese"
+    ],
+    "instructions": [
+        "Form ground beef into patties.",
+        "Grill patties until cooked to your liking.",
+        "Assemble burgers with lettuce, tomato, onion, and cheese.",
+        "Serve and enjoy."
+    ],
+    "imageUrl": "hamburger.jpg",
+    "cuisine": "American",
+    "difficulty": "Easy",
+    "servings": 4,
+    "description": "A hamburger is a sandwich consisting of a cooked patty of ground beef, usually in a sliced bun.",
+    "duration": 20
+},
+{
+    "id": 9,
+    "title": "Chicken Noodle Soup",
+    "ingredients": [
+        "chicken breast",
+        "chicken broth",
+        "egg noodles",
+        "carrot",
+        "celery",
+        "onion"
+    ],
+    "instructions": [
+        "In a pot, bring chicken broth to a boil.",
+        "Add diced chicken breast, carrot, celery, and onion.",
+        "Simmer until chicken is cooked and vegetables are tender.",
+        "Add egg noodles and cook until al dente."
+    ],
+    "imageUrl": "chicken-noodle-soup.jpg",
+    "cuisine": "American",
+    "difficulty": "Easy",
+    "servings": 4,
+    "description": "Chicken noodle soup is a soup made from chicken, vegetables, and egg noodles.",
+    "duration": 30
+},
+{
+    "id": 10,
+    "title": "Lasagna",
+    "ingredients": [
+        "ground beef",
+        "lasagna noodles",
+        "tomato sauce",
+        "ricotta cheese",
+        "mozzarella cheese",
+        "parmesan cheese"
+    ],
+    "instructions": [
+        "Brown ground beef in a pan.",
+        "In a baking dish, layer noodles, beef, tomato sauce, ricotta, and mozzarella.",
+        "Repeat until the dish is full.",
+        "Top with parmesan cheese and bake until bubbly."
+    ],
+    "imageUrl": "lasagna.jpg",
+    "cuisine": "Italian",
+    "difficulty": "Intermediate",
+    "servings": 6,
+    "description": "Lasagne are a type of wide, flat pasta, possibly one of the oldest types of pasta.",
+    "duration": 60
+}
   ]
   
