@@ -1,14 +1,50 @@
-.slider {
-    padding: 20px 10%;
+.row {
+    width: auto;
+    margin: 0 5%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.progress-bar {
+    display: flex;
+    gap: 5px
+}
+
+.progress-bar-item {
+    width: 20px;
+    height: 3px;
+    background-color: black;
+}
+
+.progress-bar-item.active {
+    background-color: var(--primary-color);
 }
 
 .slider-container {
-    overflow: hidden;
-    white-space: nowrap;
+    display: flex;
+    gap: 5px;
 }
 
-.recipe-list {
-    display: flex;
-    gap: 20px;
-    transition: transform 0.3s;
+.handler {
+    border: none;
 }
+
+.slider {
+    display: flex;
+    overflow-x: scroll;
+    transition: all 0.2s ease-in-out;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.handle {
+    border: none;
+}
+

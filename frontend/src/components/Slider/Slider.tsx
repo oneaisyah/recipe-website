@@ -1,50 +1,65 @@
-import React, { useRef } from 'react';
-import dummyData from '../../data/recipes.json'
 import './Slider.css';
 import RecipeCard from '../RecipeCard/RecipeCard';
+import { useEffect, useRef, useState } from 'react';
+import { RecipeData } from '../../types/interfaces';
 
 interface SliderProps {
     title: string;
-    data: string[];
+    data: RecipeData[];
 }
 
-function Slider() {
-    const title = 'Popular Recipes';
-    const recipe = dummyData[0];
-    const recipeList = [recipe, recipe, recipe, recipe, recipe, recipe, recipe]
-    const [scrollIndex, setScrollIndex] = React.useState(0);
+function Slider( props: SliderProps ) {
+    const sliderRef = useRef<HTMLDivElement>(null);
+    const [scrollOffset, setScrollOffset] = useState<number>(0);
 
-    const scrollLeft = () => {
-      if (scrollIndex > 0) {
-        setScrollIndex(scrollIndex - 1);
-      }
-    };
-  
-    const scrollRight = () => {
-      if (scrollIndex < recipeList.length - 3) {
-        setScrollIndex(scrollIndex + 1);
-      }
-    };
-
-    const recipeListStyles = {
-        transform: `translateX(-${scrollIndex * 100}%)`, // 100% moves to the next set of three items
+    useEffect(() => {
+      const handleResize = () => {
+          if (sliderRef.current) {
+              const sliderElement = sliderRef.current;
+              const cardElement = sliderElement.querySelector('.recipe-card') as Element | null;
+              if (cardElement) {
+                  const cardWidth = cardElement.clientWidth;
+                  const cardMargin = parseInt(window.getComputedStyle(cardElement).marginRight);
+                  const noOfCards = Math.floor(sliderElement.clientWidth / (cardWidth + cardMargin));
+                  setScrollOffset((cardWidth + cardMargin) * noOfCards);
+              }
+          }
       };
 
-    return(
-        <div className='slider'>
-            <h1>{title}</h1>
-            <div className='slider-container'>
-                <div className='recipe-list' style={recipeListStyles}>
-                    {recipeList.map((recipe, index) => (
-                        <RecipeCard />
-                    ))}
-                </div>
-            </div>
-            <div className='slider-controls'>
-                <button onClick={scrollLeft}>&lt;</button>
-                <button onClick={scrollRight}>&gt;</button>
-            </div>
+      handleResize();
 
+      window.addEventListener('resize', handleResize);
+
+      return () => {
+          window.removeEventListener('resize', handleResize);
+      };
+    }, []);
+
+
+    const handleScroll = (scrollOffset: number) => {
+        if (sliderRef.current) {
+            sliderRef.current.scrollLeft += scrollOffset;
+        }
+    }
+
+    return(
+        <div className='row'>
+          <div className='header'>
+            <h2>{props.title}</h2>
+          </div>
+          <div className='slider-container'>
+            <button className='handler right-handle' onClick={() => handleScroll(-scrollOffset)}>
+              &#8249;
+            </button>
+            <div className='slider' ref={sliderRef}>
+                {props.data.map((recipe, index) => (
+                  <RecipeCard recipe={recipe} key={index} />
+                ))}
+            </div>
+            <button className='handler left-handle' onClick={() => handleScroll(scrollOffset)}>
+              &#8250;
+            </button>
+          </div>
         </div>
     )
 }
