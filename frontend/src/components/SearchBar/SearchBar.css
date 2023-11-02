@@ -16,9 +16,14 @@
     border: none;
     background-color: none;
     border-radius: 5px;
-    padding: 5px 10px;
-    font-size: 16px;
+    padding: 3px 10px;
+    font-size: 10px;
     cursor: pointer;
+}
+
+.search-icon img {
+    height: 10px;
+    width: auto;
 }
 
 /* Style the search bar button on hover */

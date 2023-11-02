@@ -6,7 +6,7 @@ const SearchBar = () => {
         <form className="search-container">
             <input className="search-input" placeholder="Search" />
             <button className="search-button" type="submit">
-                <img src={searchIcon} alt="search icon" />
+                <img src={searchIcon} className="search-icon" alt="search icon" />
             </button>
         </form>
     );
