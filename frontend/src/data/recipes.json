@@ -1,5 +1,6 @@
 [
     {
+      "id": 1,
       "title": "Spaghetti Carbonara",
       "ingredients": [
         "spaghetti",
@@ -22,6 +23,7 @@
       "duration": 15
     },
     {
+      "id": 2,
       "title": "Chicken Alfredo",
       "ingredients": [
         "fettuccine",
