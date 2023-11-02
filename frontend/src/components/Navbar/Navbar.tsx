@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import logo from './../../assets/images/recipe-realm-logo.png'
 import './Navbar.css';
+import SearchBar from '../SearchBar/SearchBar';
 
 function Navbar() {
     return (
@@ -14,6 +15,7 @@ function Navbar() {
                     </NavLink>
             </div>
             <div className='navbar-directory'>
+                <SearchBar />
                 <nav className='nav-links'>
                     <NavLink
                         to="/generate"
