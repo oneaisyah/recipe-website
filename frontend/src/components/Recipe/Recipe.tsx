@@ -6,7 +6,6 @@ interface RecipeProps {
 }
 
 export default function Recipe( prop: RecipeProps) {
-    // const recipe = dummyData[0];
     const image = require(`../../assets/images/recipe-images/${prop.recipe.imageUrl}`)
     return (
         <div className="recipe">
