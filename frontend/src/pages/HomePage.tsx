@@ -5,10 +5,15 @@ import dummyRecipe from "../data/recipes.json";
 
 function HomePage() {
     return (
-        <div>
+        <div
+            style={{
+                marginBottom: "100px",
+            }}
+        >
             <Navbar />
             <BannerCard />
             <Slider title="Popular Recipes" data={dummyRecipe}/>
+            <Slider title="My Saved Recipes" data={dummyRecipe}/>
         </div>
     )
 }
