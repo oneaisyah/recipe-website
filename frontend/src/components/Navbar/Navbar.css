@@ -2,7 +2,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1% 2%;
+    padding: 0 2%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #fff;
 }
 
 .logo-link {
@@ -11,6 +15,11 @@
     gap: 5px;
     text-decoration: none;
     color: #000;
+  }
+
+  .company-title {
+    margin: 5% 0 5% 5%;
+    white-space: nowrap;
   }
   
   .logo-link > img {
