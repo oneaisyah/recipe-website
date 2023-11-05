@@ -68,7 +68,10 @@ function Slider( props: SliderProps ) {
     return(
         <div className='row'>
           <div className='header'>
-            <h2>{props.title}</h2>
+            <div className='header-title'>
+                <h2>{props.title}</h2>
+                <a href='/'>View More</a>
+            </div>
             <div className='progress-bar'>
                 {Array.from({length: progressBarItems}).map((_, index) => (
                     <ProgressBarItem key={index} active={index === activeIndex} />
