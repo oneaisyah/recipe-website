@@ -1,0 +1,22 @@
+.timeline {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  
+  .timeline-item {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  .ghj {
+    background-color: aqua;
+    height: 80vh;
+  }
+  
+  .timeline.animate .timeline-item {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
