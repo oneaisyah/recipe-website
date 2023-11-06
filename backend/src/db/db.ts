@@ -21,7 +21,8 @@ const sequelize = new Sequelize({
   },
   dialectModule: mysql,
   dialectOptions: {
-  }
+  },
+  logging: false,
 });
 
 export default sequelize;
