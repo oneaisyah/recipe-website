@@ -21,7 +21,6 @@ const sequelize = new Sequelize({
   },
   dialectModule: mysql,
   dialectOptions: {
-    connection: dbConnection
   }
 });
 
